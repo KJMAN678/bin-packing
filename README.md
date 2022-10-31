@@ -18,6 +18,11 @@ https://en.wikipedia.org/wiki/Bin_packing_problem
 In the right pane is an overview of all the rectangles that are to be packed. The rectangles colored in blue are the boxes that have not yet been packed, and the ones colored grey have already been packed into the left pane.
 The left pane is the packing area, where the goal is to fit in as many of the boxes from the right pane as possible. The algorithm is said to converge successfully if all the boxes are packed in the left pane with no gaps. The rectangles in blue are the packed rects, and the ones in grey represent all possible positions for the next move. Red crosses are the point at which the origins can be placed.
 
+**make vertual environment**
+
+- Python 3.9
+- Mac
+
 ```python
 # make virtual environment
 python -m venv .venv
@@ -30,4 +35,7 @@ python -m pip install --upgrade pip
 
 # install library from requirements.txt
 pip install -r requirements.txt
+
+# run
+python main.py
 ```

@@ -1,8 +1,8 @@
 # bin-packing
 
-A Python implementation of the running process for a 2D greedy two-level search algorithm for the 2D rectangular packing problem. Implemented following the process outlined in Chen and Huang (2007) (see sources).  
+A Python implementation of the running process for a 2D greedy two-level search algorithm for the 2D rectangular packing problem. Implemented following the process outlined in Chen and Huang (2007) (see sources).
 
-The rectangles are placed into the container one by one and each rectangle is packed at a position by a corner-occupying action so that it touches at least two items without overlapping other already packed rectangles. At the first level of the algorithm, a simple algorithm called A0 selects and packs one rectangle according to the highest degree first rule at every iteration of packing. At the second level, A0 is itself used to evaluate the benefit of a CCOA more globally.  
+The rectangles are placed into the container one by one and each rectangle is packed at a position by a corner-occupying action so that it touches at least two items without overlapping other already packed rectangles. At the first level of the algorithm, a simple algorithm called A0 selects and packs one rectangle according to the highest degree first rule at every iteration of packing. At the second level, A0 is itself used to evaluate the benefit of a CCOA more globally.
 
 The algorithm is implemented in python using matplotlib for visualization where the running time has been slowed for the sake of recording.
 
@@ -17,3 +17,17 @@ https://en.wikipedia.org/wiki/Bin_packing_problem
 **Explaination**  
 In the right pane is an overview of all the rectangles that are to be packed. The rectangles colored in blue are the boxes that have not yet been packed, and the ones colored grey have already been packed into the left pane.
 The left pane is the packing area, where the goal is to fit in as many of the boxes from the right pane as possible. The algorithm is said to converge successfully if all the boxes are packed in the left pane with no gaps. The rectangles in blue are the packed rects, and the ones in grey represent all possible positions for the next move. Red crosses are the point at which the origins can be placed.
+
+```python
+# make virtual environment
+python -m venv .venv
+
+# activate virtual environment
+source .venv/bin/activate
+
+# upgrade pip version
+python -m pip install --upgrade pip
+
+# install library from requirements.txt
+pip install -r requirements.txt
+```
